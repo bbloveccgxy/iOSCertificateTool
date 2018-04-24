@@ -25,15 +25,14 @@ if argsCount == 3 {
     password = CommandLine.arguments[2]
 }
 
-
 let extentsion = NSString(string: filePath).pathExtension
 
 if extentsion == "p12" {
     let p12Reader = P12Reader(path: filePath, password: password!)
     p12Reader.getInfo()
+    p12Reader.description()
 //    print(p12Reader.codesignIdentity)
 //    print(p12Reader.sha1)
-    p12Reader.description()
 } else if extentsion == "mobileprovision" {
     let mobileprovisionReader = MobileprovisionReader(path:filePath)
     let mobileprovisionInfo = mobileprovisionReader.getInfo()
@@ -42,8 +41,3 @@ if extentsion == "p12" {
     print("Wrong File Type")
     exit(1)
 }
-
-
-
-
-
