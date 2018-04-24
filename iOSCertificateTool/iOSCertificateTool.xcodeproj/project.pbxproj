@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28582326208EDE9B00653171 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28582325208EDE9B00653171 /* main.swift */; };
+		285823E7208F04DB00653171 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285823E6208F04DB00653171 /* main.swift */; };
+		285823F8208F069E00653171 /* XYMobileprovisionReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285823F4208F05F300653171 /* XYMobileprovisionReader.framework */; };
+		285823F9208F06A300653171 /* XYP12Reader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285823F6208F05F700653171 /* XYP12Reader.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		28582320208EDE9B00653171 /* CopyFiles */ = {
+		285823E1208F04DB00653171 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,55 +25,69 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		28582322208EDE9B00653171 /* iOSCertificateTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = iOSCertificateTool; sourceTree = BUILT_PRODUCTS_DIR; };
-		28582325208EDE9B00653171 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		285823E3208F04DB00653171 /* iOSCertificateTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = iOSCertificateTool; sourceTree = BUILT_PRODUCTS_DIR; };
+		285823E6208F04DB00653171 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		285823F4208F05F300653171 /* XYMobileprovisionReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = XYMobileprovisionReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		285823F6208F05F700653171 /* XYP12Reader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = XYP12Reader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2858231F208EDE9B00653171 /* Frameworks */ = {
+		285823E0208F04DB00653171 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				285823F9208F06A300653171 /* XYP12Reader.framework in Frameworks */,
+				285823F8208F069E00653171 /* XYMobileprovisionReader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		28582319208EDE9B00653171 = {
+		285823DA208F04DB00653171 = {
 			isa = PBXGroup;
 			children = (
-				28582324208EDE9B00653171 /* iOSCertificateTool */,
-				28582323208EDE9B00653171 /* Products */,
+				285823E5208F04DB00653171 /* iOSCertificateTool */,
+				285823E4208F04DB00653171 /* Products */,
+				285823F3208F05F300653171 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		28582323208EDE9B00653171 /* Products */ = {
+		285823E4208F04DB00653171 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				28582322208EDE9B00653171 /* iOSCertificateTool */,
+				285823E3208F04DB00653171 /* iOSCertificateTool */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		28582324208EDE9B00653171 /* iOSCertificateTool */ = {
+		285823E5208F04DB00653171 /* iOSCertificateTool */ = {
 			isa = PBXGroup;
 			children = (
-				28582325208EDE9B00653171 /* main.swift */,
+				285823E6208F04DB00653171 /* main.swift */,
 			);
 			path = iOSCertificateTool;
+			sourceTree = "<group>";
+		};
+		285823F3208F05F300653171 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				285823F6208F05F700653171 /* XYP12Reader.framework */,
+				285823F4208F05F300653171 /* XYMobileprovisionReader.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		28582321208EDE9B00653171 /* iOSCertificateTool */ = {
+		285823E2208F04DB00653171 /* iOSCertificateTool */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28582329208EDE9B00653171 /* Build configuration list for PBXNativeTarget "iOSCertificateTool" */;
+			buildConfigurationList = 285823EA208F04DB00653171 /* Build configuration list for PBXNativeTarget "iOSCertificateTool" */;
 			buildPhases = (
-				2858231E208EDE9B00653171 /* Sources */,
-				2858231F208EDE9B00653171 /* Frameworks */,
-				28582320208EDE9B00653171 /* CopyFiles */,
+				285823DF208F04DB00653171 /* Sources */,
+				285823E0208F04DB00653171 /* Frameworks */,
+				285823E1208F04DB00653171 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -79,54 +95,54 @@
 			);
 			name = iOSCertificateTool;
 			productName = iOSCertificateTool;
-			productReference = 28582322208EDE9B00653171 /* iOSCertificateTool */;
+			productReference = 285823E3208F04DB00653171 /* iOSCertificateTool */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2858231A208EDE9B00653171 /* Project object */ = {
+		285823DB208F04DB00653171 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "高昕源";
 				TargetAttributes = {
-					28582321208EDE9B00653171 = {
+					285823E2208F04DB00653171 = {
 						CreatedOnToolsVersion = 9.3;
 					};
 				};
 			};
-			buildConfigurationList = 2858231D208EDE9B00653171 /* Build configuration list for PBXProject "iOSCertificateTool" */;
+			buildConfigurationList = 285823DE208F04DB00653171 /* Build configuration list for PBXProject "iOSCertificateTool" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 28582319208EDE9B00653171;
-			productRefGroup = 28582323208EDE9B00653171 /* Products */;
+			mainGroup = 285823DA208F04DB00653171;
+			productRefGroup = 285823E4208F04DB00653171 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				28582321208EDE9B00653171 /* iOSCertificateTool */,
+				285823E2208F04DB00653171 /* iOSCertificateTool */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2858231E208EDE9B00653171 /* Sources */ = {
+		285823DF208F04DB00653171 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28582326208EDE9B00653171 /* main.swift in Sources */,
+				285823E7208F04DB00653171 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		28582327208EDE9B00653171 /* Debug */ = {
+		285823E8208F04DB00653171 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -186,7 +202,7 @@
 			};
 			name = Debug;
 		};
-		28582328208EDE9B00653171 /* Release */ = {
+		285823E9208F04DB00653171 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -239,21 +255,23 @@
 			};
 			name = Release;
 		};
-		2858232A208EDE9B00653171 /* Debug */ = {
+		285823EB208F04DB00653171 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ML78DUX4A6;
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
-		2858232B208EDE9B00653171 /* Release */ = {
+		285823EC208F04DB00653171 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ML78DUX4A6;
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -262,25 +280,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2858231D208EDE9B00653171 /* Build configuration list for PBXProject "iOSCertificateTool" */ = {
+		285823DE208F04DB00653171 /* Build configuration list for PBXProject "iOSCertificateTool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				28582327208EDE9B00653171 /* Debug */,
-				28582328208EDE9B00653171 /* Release */,
+				285823E8208F04DB00653171 /* Debug */,
+				285823E9208F04DB00653171 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28582329208EDE9B00653171 /* Build configuration list for PBXNativeTarget "iOSCertificateTool" */ = {
+		285823EA208F04DB00653171 /* Build configuration list for PBXNativeTarget "iOSCertificateTool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2858232A208EDE9B00653171 /* Debug */,
-				2858232B208EDE9B00653171 /* Release */,
+				285823EB208F04DB00653171 /* Debug */,
+				285823EC208F04DB00653171 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2858231A208EDE9B00653171 /* Project object */;
+	rootObject = 285823DB208F04DB00653171 /* Project object */;
 }
